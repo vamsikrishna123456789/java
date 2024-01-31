@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Sumofodd {
+    public static void main(String[] args) {
+        int i, odd = 0;
+        Scanner x = new Scanner(System.in);
+        System.out.println("enter the array size:");
+        int n = x.nextInt();
+        int s[] = new int[n];
+        for (i = 0; i < n; i++) {
+            System.out.println("enter the element:");
+            s[i] = x.nextInt();
+            if (s[i] % 2 != 0) {
+                odd = odd + s[i];
+            }
+
+        }
+        System.out.println(odd);
+    }
+}
