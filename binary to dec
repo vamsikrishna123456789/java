@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Dectobin
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the Binary number: ");
+        String hex = scanner.nextLine();
+
+        int decimal = Integer.parseInt(hex,16);
+        System.out.println("Decimal representation: " + decimal);
+    }
+}
